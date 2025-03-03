@@ -4,7 +4,6 @@ import AboutSection from "./AboutSection";
 import FeaturesSection from "./FeatureSection";
 import EligibilitySection from "./ElegibitySection";
 import ParticipationSection from "./PerticipationSection";
-import ApplySection from "./ApllySection";
 import Footer from "./Footer";
 import ApplicationSelection from "./ApllySection";
 
