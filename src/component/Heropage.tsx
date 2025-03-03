@@ -8,7 +8,7 @@ import Footer from "./Footer";
 import ApplicationSelection from "./ApllySection";
 
 
-export default function Home() {
+export default function Heropage() {
   return (
     <div >
       <Header />
