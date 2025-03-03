@@ -21,17 +21,29 @@ const AboutSection = () => {
             <p className="text-sm font-medium text-gray-800">Blockchain Tech</p>
           </div>
         </div>
-        <div>
-          <h2 className="mb-6 text-2xl font-bold text-blue-600">About SUI Lagos Hacker House</h2>
-          <p className="mb-4">
-            <span className="font-semibold text-blue-600">Sui Lagos Hacker House</span> is a 6-day event that is designed to bring together developers, engineers, builders, innovators, and blockchain enthusiasts who are interested in building on the Sui blockchain.
-          </p>
-          <p className="mb-4">
-            The event will feature workshops, mentorship and coaching sessions, hacking, and networking opportunities to encourage innovation and collaboration. Attendees will learn about the Sui blockchain, develop skills to build robust solutions using Sui and prepare for the <span className="font-semibold text-blue-600">Sui Overflow 2023 Hackathon</span>, a global competition with over $500,000 in combined prizes.
-          </p>
-          <p className="mb-4">
-            The Sui Lagos Hacker House is implemented by <span className="font-semibold cursor-pointer underline">Semicolon</span> and sponsored by <span className="font-semibold cursor-pointer underline">Sui Foundation</span>.
-          </p>
+        <div className="md:pl-4 lg:pl-8">
+          <h2 className="mb-4 text-xl md:text-2xl font-bold text-blue-600">
+            About SUI Lagos Hacker House
+          </h2>
+          <div className="space-y-4 text-sm md:text-base">
+            <p>
+              <span className="font-semibold text-blue-600">Sui Lagos Hacker House</span> is a 6-day event that brings together developers, engineers, builders, innovators, and blockchain enthusiasts interested in building on the Sui blockchain.
+            </p>
+            <p>
+              The event features workshops, mentorship sessions, hacking, and networking opportunities to encourage innovation. Attendees will learn about Sui blockchain, develop skills to build robust solutions, and prepare for the{' '}
+              <span className="font-semibold text-blue-600">Sui Overflow 2023 Hackathon</span>, a global competition with over $500,000 in prizes.
+            </p>
+            <p>
+              Implemented by{' '}
+              <span className="font-semibold text-blue-600 underline hover:no-underline cursor-pointer">
+                Semicolon
+              </span>{' '}
+              and sponsored by{' '}
+              <span className="font-semibold text-blue-600 underline hover:no-underline cursor-pointer">
+                Sui Foundation
+              </span>.
+            </p>
+          </div>
         </div>
       </div>
     </section>

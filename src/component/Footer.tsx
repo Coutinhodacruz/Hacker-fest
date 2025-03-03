@@ -1,57 +1,68 @@
 const Footer = () => {
   return (
-    <footer style={{ marginTop: "3rem", backgroundColor: "#051027", padding: "3rem 0", color: "white" }}>
-      <div style={{ maxWidth: "72rem", margin: "0 auto", display: "grid", gap: "2rem", padding: "0 1rem", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))" }}>
-        <div>
-          <h4 style={{ marginBottom: "1rem", fontSize: "1.125rem", fontWeight: "bold", color: "#06b6d4" }}>Logistics</h4>
-          <ul style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
-            {[
-              "Accommodation will be provided for teams from outside Lagos",
-              "Meals will be provided"
-            ].map((item, index) => (
-              <li key={index} style={{ display: "flex", alignItems: "start", gap: "0.5rem" }}>
-                <span style={{ marginTop: "0.25rem", color: "#06b6d4" }}>•</span>
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
+    <footer className="mt-12 bg-[#051027] py-12 text-white">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Main Content Grid */}
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-12">
+          {/* Logistics Section */}
+          <div className="space-y-4">
+            <h4 className="text-lg font-bold text-[#06b6d4]">Logistics</h4>
+            <ul className="space-y-2">
+              {[
+                "Accommodation will be provided for teams from outside Lagos",
+                "Meals will be provided"
+              ].map((item, index) => (
+                <li key={index} className="flex items-start gap-2">
+                  <span className="mt-1 text-white">•</span>
+                  <span className="text-sm sm:text-base">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Resources Section */}
+          <div className="space-y-4">
+            <h4 className="text-lg font-bold text-[#06b6d4]">Resources and Support</h4>
+            <div className="space-y-4 text-sm sm:text-base">
+              <p>
+                Semicolon is providing free training on Sui Move, sponsored by the Sui Foundation. It isn’t too late to register for the current round of classes. Click on this link to register: 
+                <a
+                  href="https://bit.ly/SC-SUI-Training"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="break-words text-[#06b6d4] underline"
+                >
+                  https://bit.ly/SC-SUI-Training
+                </a>
+              </p>
+              <p>
+                Semicolon is a workforce development company that is solving the problem of youth unemployment by training software engineers and techpreneurs. Through our one-year techpreneurship program, we help individuals develop required skills to compete as software engineers in the global market. To learn more about Semicolon, please visit 
+                <a
+                  href="https://www.semicolon.africa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#06b6d4] underline"
+                >
+                  www.semicolon.africa
+                </a>
+              </p>
+            </div>
+          </div>
         </div>
-        <div>
-          <h4 style={{ marginBottom: "1rem", fontSize: "1.125rem", fontWeight: "bold", color: "#06b6d4" }}>Resources and Support</h4>
-          <p style={{ marginBottom: "1rem" }}>
-            Semicolon is providing free training on Sui Move, sponsored by the Sui Foundation. It isn’t too late to register for the current round of classes. Click on this link to register: 
-            <a href="https://bit.ly/SC-SUI-Training" target="_blank" rel="noopener noreferrer" style={{ color: "#06b6d4", textDecoration: "underline" }}>
-              https://bit.ly/SC-SUI-Training
-            </a>
-          </p>
-          <p>
-            Semicolon is a workforce development company that is solving the problem of youth unemployment by training software engineers and techpreneurs. Through our one-year techpreneurship program, we help individuals develop required skills to compete as software engineers in the global market. To learn more about Semicolon, please visit 
-            <a href="https://www.semicolon.africa" target="_blank" rel="noopener noreferrer" style={{ color: "#06b6d4", textDecoration: "underline" }}>
-              www.semicolon.africa
-            </a>
-          </p>
-        </div>
-      </div>
-      <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "0 1rem", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))" }}>
-        <div>
-          <div style={{ margin: "3rem auto 0", display: "flex", alignItems: "center", gap: "4rem", maxWidth: "72rem", padding: "0 1rem" }}>
-            <div>
+
+        <div className="mt-12   pt-8">
+          <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center sm:gap-8">
+            <div className="flex items-center gap-4 sm:gap-8">
               <img
                 alt="Semicolon logo"
                 src="/semicolon-logo.svg"
-                width={120}
-                height={30}
-                style={{ height: "1.5rem", width: "auto", objectFit: "contain", color: "transparent" }}
+                className="h-6 w-auto object-contain"
               />
-            </div>
-            <span style={{ fontSize: "1.25rem" }}>|</span>
-            <div>
+              <span className="hidden text-xl sm:inline-block">|</span>
               <img
                 alt="Sui logo"
                 src="/sui-logo.svg"
-                width={120}
-                height={30}
-                style={{ height: "1.5rem", width: "auto", objectFit: "contain", color: "transparent" }}
+                className="h-6 w-auto object-contain"
               />
             </div>
           </div>
