@@ -2,9 +2,7 @@ const Footer = () => {
   return (
     <footer className="mt-12 bg-[#051027] py-12 text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Main Content Grid */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-12">
-          {/* Logistics Section */}
           <div className="space-y-4">
             <h4 className="text-lg font-bold text-[#06b6d4]">Logistics</h4>
             <ul className="space-y-2">
@@ -13,14 +11,13 @@ const Footer = () => {
                 "Meals will be provided"
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-2">
-                  <span className="mt-1 text-white">•</span>
+                  <span className="mb-2 text-white">•</span> 
                   <span className="text-sm sm:text-base">{item}</span>
                 </li>
               ))}
             </ul>
           </div>
-
-          {/* Resources Section */}
+          
           <div className="space-y-4">
             <h4 className="text-lg font-bold text-[#06b6d4]">Resources and Support</h4>
             <div className="space-y-4 text-sm sm:text-base">
@@ -30,7 +27,7 @@ const Footer = () => {
                   href="https://bit.ly/SC-SUI-Training"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="break-words text-[#06b6d4] underline"
+                  className="break-words text-[#fff] underline"
                 >
                   https://bit.ly/SC-SUI-Training
                 </a>
@@ -41,7 +38,7 @@ const Footer = () => {
                   href="https://www.semicolon.africa"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#06b6d4] underline"
+                  className="text-[#fff] underline"
                 >
                   www.semicolon.africa
                 </a>
@@ -50,7 +47,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12   pt-8">
+        <div className="mt-12 pt-8">
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center sm:gap-8">
             <div className="flex items-center gap-4 sm:gap-8">
               <img
