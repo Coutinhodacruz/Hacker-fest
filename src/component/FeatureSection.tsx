@@ -1,6 +1,6 @@
 const FeaturesSection = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 px-4 sm:px-6 lg:px-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-0 mb-16 px-4 sm:px-6 lg:px-8"> {/* Set gap to 0 */}
       
       <div className="bg-blue-50 p-8 lg:p-16">
         <div className="max-w-3xl mx-auto">
